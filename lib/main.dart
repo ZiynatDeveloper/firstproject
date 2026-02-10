@@ -36,13 +36,12 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-          Icon(Icons.money_rounded,color: Colors.green,size: 100,)
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: .center,
+        children: [
+        Expanded(
+          child: Image.asset("assets/Screenshot 2025-11-25 205156.png"),
+        )],
       ),
     );
   }
